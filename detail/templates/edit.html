@@ -1,0 +1,52 @@
+<html>
+    <head></head>
+    <body>
+        <form action="update">
+            <table align="center" border="1">
+                <tr>
+                    <th colspan="2">edit record</th>
+                </tr>
+                <tr>
+                    <td>Id</td>
+                    <td>
+                        <input type="text" name="id" value="{{record.id}}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>
+                        <input type="text" name="name" value="{{record.s_name}}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>
+                        <input type="text" name="age" value="{{record.s_age}}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>mobile</td>
+                    <td>
+                    <input type="text" name="mobile" value="{{record.s_mobile}}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>address</td>
+                    <td>
+                        <textarea name="address">{{record.s_address}}</textarea>
+                    </td>
+                <tr>
+                    <td>marks</td>
+                    <td>
+                        <input type="text" name="marks" value="{{record.s_marks}}">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" name="btn" value="update">
+                    </td>
+                </tr>
+        </form>
+    </body>
+</html>
+        

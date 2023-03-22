@@ -1,0 +1,30 @@
+<html>
+    <head></head>
+    <body>
+        <form>
+            <table align="center" border="1">
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Mobile</th>
+                    <th>Address</th>
+                    <th>Marks</th>
+                    <th colspan="2" align="center">Action</th>
+                </tr>
+                {% for x in A %}
+                    <tr>
+                        <td>{{x.id}}</td>
+                        <td>{{x.s_name}}</td>
+                        <td>{{x.s_age}}</td>
+                        <td>{{x.s_mobile}}</td>
+                        <td>{{x.s_address}}</td>
+                        <td>{{x.s_marks}}</td>
+                        <td><a href="searchdata?id={{x.id}}" style="color:green;">edit</a></td>
+                        <td><a href="deletedata?id={{x.id}}" style="color:red;">delete</a></td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </form>
+    </body>
+</html>
